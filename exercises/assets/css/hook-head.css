@@ -1,0 +1,97 @@
+/* Industry-standard reset block */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply custom properties for font stacks */
+:root {
+  --serif-font-windows: "Georgia", "Times New Roman", serif;
+  --serif-font-mac: "Times New Roman", "Georgia", serif;
+  --sans-serif-font-windows: "Segoe UI", Tahoma, "Helvetica Neue", Arial, sans-serif;
+  --sans-serif-font-mac: "Helvetica Neue", Arial, sans-serif;
+  
+  /* Fluid font scale using clamp() */
+  --font-size-base: clamp(1rem, 2vw + 1rem, 1.25rem);
+  --font-size-h1: clamp(2.5rem, 5vw + 2rem, 3.5rem);
+  --font-size-h2: clamp(2rem, 4vw + 1.5rem, 2.75rem);
+  --font-size-p: clamp(1rem, 1.5vw + 1rem, 1.125rem);
+}
+
+/* General body styles */
+body {
+  font-family: var(--sans-serif-font-windows), var(--sans-serif-font-mac), sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: var(--font-size-h1);
+  margin-bottom: 0.5rem;
+  font-family: var(--serif-font-windows), var(--serif-font-mac), serif;
+}
+
+header h2 {
+  font-size: var(--font-size-h2);
+  margin-top: 0.5rem;
+  font-family: var(--serif-font-windows), var(--serif-font-mac), serif;
+}
+
+/* Main section styles */
+main {
+  display: block;
+}
+
+/* Section styles */
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: 1rem;
+  font-family: var(--serif-font-windows), var(--serif-font-mac), serif;
+}
+
+section p {
+  font-size: var(--font-size-p);
+  margin-bottom: 1rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  header,
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  header h1 {
+    font-size: clamp(1.75rem, 6vw + 1.5rem, 2.75rem);
+  }
+  
+  header h2 {
+    font-size: clamp(1.5rem, 5vw + 1rem, 2rem);
+  }
+  
+  section h2 {
+    font-size: clamp(1.75rem, 4vw + 1rem, 2.25rem);
+  }
+  
+  section p {
+    font-size: clamp(1rem, 1.75vw + 1rem, 1.125rem);
+  }
+}
+
