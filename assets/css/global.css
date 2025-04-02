@@ -95,7 +95,7 @@ section > * { max-width: 1600px; margin-left: auto; margin-right: auto }
 
 body { font-family: var(--font-sans); 
     text-align: center; 
-    background-color: lightgreen; }
+    background-color: lightskyblue; }
 
 h1 {
     font-size: var(--fs-xxxl);
@@ -128,4 +128,4 @@ p {
 	margin-bottom: 12px;
 }
 
-a { color: rgb(160, 229, 241); }
+a { color: darkblue; }
