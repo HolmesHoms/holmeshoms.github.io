@@ -1,0 +1,28 @@
+
+
+header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+h2 {color: red}
+.theme-light {background-color: #374c54}
+.theme-light {color: #ffffff}
+.section-1 {background-color:#374c54}
+.theme-light .col-1 h2 {color:#ffffff}
+.theme-light .col-1 h3 {color:#ffffff}
+.theme-light .col-1 h3 a:link {color:#95482b}
+.theme-light .col-2 h1  {color:#ffffff}
+
+.theme-light .container-text h1{color:white}
+.theme-light .container-text h2{color:white}
+/*.section-selector-1 .col-1 h3 a:link, .section-selector-1 .col-1 h3 a:visited { color: var(--peach); transition: all 0.3 ease; }/*
+/*.theme-light {background-color:#374c54} */
+/*.container-menu-links {color: whitesmoke}
+
+a {color: white}
+
+.links-wrapper {color: whitesmoke;} 
+
+/*.container-menu-links {background-color:  white ;} */ 
+.hero-image { 
+    max-width: 600px;
+    max-height: 800px;
+    border: var(--coral) 3px solid;
+}
