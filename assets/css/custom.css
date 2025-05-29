@@ -1,3 +1,38 @@
+header .col-text h2, .col-1 > h3 { color: #fff }
+.col-3 h3, .col-3 p,
+.col-4 h3, .col-4 p { color: #fff }
+
+.theme-light a:not(.btn):link,
+.theme-light a:not(.btn):visited {
+  color: #fff;
+}
+
+.theme-light a:not(.btn):focus, 
+.theme-light a:not(.btn):hover, 
+.theme-light a:not(.btn):active {
+  color: var(--red-400);
+}
+
+.theme-light .btn-outline:link, 
+.theme-light .btn-outline:visited {
+  color: var(--white-000);
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.theme-light .btn-outline:active {
+  color: var(--white-000);
+  background-color: var(--slate-700);
+  border-color: var(--slate-700);
+}
+
+.theme-light .btn-outline:focus, 
+.theme-light .btn-outline:hover, 
+.theme-light .btn-outline:active {
+  color: var(--white-000);
+  background-color: var(--slate-700);
+  border-color: var(--slate-700);
+}
 
 
 header .col-text h2, .col-1 > h3 { line-height: 1.8 }
